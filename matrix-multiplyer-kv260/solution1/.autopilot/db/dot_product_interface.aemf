@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1683228810586">
+  <ports id="1" name="A" type="PortType" originalName="A" coreName="RAM_1P" coreId="1702129263" bitwidth="8" iftype="IfTypeRegister" arraysize="1048576">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="B" type="PortType" originalName="B" coreName="RAM_1P" coreId="0" bitwidth="8" iftype="IfTypeRegister" arraysize="1048576">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="C" type="PortType" originalName="C" coreName="RAM_1P" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRegister" arraysize="1048576">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="m" type="PortType" originalName="m" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="n" type="PortType" originalName="n" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="h" type="PortType" originalName="h" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="38" source_obj="//@ports.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="40" source_obj="//@ports.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="42" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="49" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="50" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="80" RegionName="dot_product_interface">
+    <basic_blocks id="35" name="dot_product_interface" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="h_read" lineNumber="7" originalName="h" fileName="matrix-multiplyer-kv260/dot_product.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matrix-multiplyer-kv260/dot_product.cpp" linenumber="7" fileDirectory="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>h</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="n_read" lineNumber="7" originalName="n" fileName="matrix-multiplyer-kv260/dot_product.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matrix-multiplyer-kv260/dot_product.cpp" linenumber="7" fileDirectory="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>n</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="m_read" lineNumber="7" originalName="m" fileName="matrix-multiplyer-kv260/dot_product.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matrix-multiplyer-kv260/dot_product.cpp" linenumber="7" fileDirectory="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>m</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="_ln7" lineNumber="7" fileName="matrix-multiplyer-kv260/dot_product.cpp" fileDirectory=".." rtlName="Loop_L1_proc_U0" coreId="741749052" opcode="call" nodeLatency="1" m_display="0" m_delay="4.53" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matrix-multiplyer-kv260/dot_product.cpp" linenumber="7" fileDirectory="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>A</dataInputObjs>
+        <dataInputObjs>B</dataInputObjs>
+        <dataOutputObjs>C</dataOutputObjs>
+        <constName>Loop_L1_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln9" lineNumber="9" fileName="matrix-multiplyer-kv260/dot_product.cpp" fileDirectory=".." coreId="741749052" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="matrix-multiplyer-kv260/dot_product.cpp" linenumber="9" fileDirectory="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="matrix-multiplyer-kv260/dot_product.cpp">
+        <validLinenumbers>7</validLinenumbers>
+        <validLinenumbers>9</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="n_read_reg_101">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="h_read_reg_96">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="m_read_reg_106">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <moduleNodes realName="grp_Loop_L1_proc_fu_80">
+    <nodeIds>33</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="h_read_read_fu_62">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="m_read_read_fu_74">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="n_read_read_fu_68">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioPorts name="h">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="m">
+    <contents name="read">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="n">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="2"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dot_product_interface" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1082130433" mIsDfPipe="true">
+      <basicBlocks>35</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst">
+        <processe_list name="Loop_L1_proc_U0" ssdmobj_id="33">
+          <pins>
+            <port name="m" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_29" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+          <pins>
+            <port name="h" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_31" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+          <pins>
+            <port name="C" dir="DirOut" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_28" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+          <pins>
+            <port name="n" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_30" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+          <pins>
+            <port name="A" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_26" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+          <pins>
+            <port name="B" type="MEMType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_27" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="Loop_L1_proc_U0" ssdmobj_id="33" object_id="_35"/>
+          </pins>
+        </processe_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,203 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "dot_product_interface"
+              }]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "7",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "dot_product",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "8",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "4",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "9",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0x0"
+              },
+              {
+                "name": "port",
+                "value": "A"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "5",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "10",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0x4"
+              },
+              {
+                "name": "port",
+                "value": "B"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "6",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "11",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0x8"
+              },
+              {
+                "name": "port",
+                "value": "C"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "7",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "12",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0xC"
+              },
+              {
+                "name": "port",
+                "value": "m"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "8",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0x10"
+              },
+              {
+                "name": "port",
+                "value": "n"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "9",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/directives.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": ""
+              },
+              {
+                "name": "offset",
+                "value": "0x14"
+              },
+              {
+                "name": "port",
+                "value": "h"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "dot_product_interface",
+          "label": "",
+          "functionLabel": "",
+          "id": "10",
+          "sourceFile": "C:\/Users\/tsope\/AppData\/Roaming\/Xilinx\/Vitis\/matrix-multiplyer-kv260\/solution1\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "dot_product_interface"
+              }]
+          }
+        }
+      ]
+    }]}

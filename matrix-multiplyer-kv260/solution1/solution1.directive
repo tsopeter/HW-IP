@@ -1,0 +1,58 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="dot_product_interface"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="dot_product" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0x0"/>
+                <option name="port" positionalBoolean="4" value="A"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0x4"/>
+                <option name="port" positionalBoolean="4" value="B"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0x8"/>
+                <option name="port" positionalBoolean="4" value="C"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0xC"/>
+                <option name="port" positionalBoolean="4" value="m"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0x10"/>
+                <option name="port" positionalBoolean="4" value="n"/>
+            </pragma>
+        </directive>
+        <directive functionName="dot_product_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="offset" value="0x14"/>
+                <option name="port" positionalBoolean="4" value="h"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

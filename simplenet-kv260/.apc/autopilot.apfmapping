@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="simplenet.cpp" path="C:\Users\tsope\Downloads\simplenet-20230504T170352Z-001\simplenet\simplenet.cpp"/>
+    <originFiles name="simplenet.hpp" path="C:\Users\tsope\Downloads\simplenet-20230504T170352Z-001\simplenet\simplenet.hpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

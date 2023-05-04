@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dot_product.cpp" path="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis\matrix-multiplyer-kv260\dot_product.cpp"/>
+    <originFiles name="dot_product.hpp" path="C:\Users\tsope\AppData\Roaming\Xilinx\Vitis\matrix-multiplyer-kv260\dot_product.hpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

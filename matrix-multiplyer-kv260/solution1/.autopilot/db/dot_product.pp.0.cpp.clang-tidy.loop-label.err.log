@@ -1,0 +1,3 @@
+26 errors generated.
+Error while processing C:\Users\tsope\AppData\Roaming\Xilinx\Vitis\matrix-multiplyer-kv260\solution1\.autopilot\db\dot_product.pp.0.cpp.
+clang-tidy applied 130 of 130 suggested fixes.
