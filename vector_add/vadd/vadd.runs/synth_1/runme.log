@@ -20,3 +20,391 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16132
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1798.691 ; gain = 334.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_3' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_axi_dma_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_3' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_axi_dma_0_3_stub.v:5]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tlast' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 's_axis_s2mm_tready' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_3' is unconnected for instance 'axi_dma_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_3' has 64 connections declared, but only 56 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:208]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_1_2' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_axi_dma_1_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_1_2' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_axi_dma_1_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tlast' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 's_axis_s2mm_tready' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_1_2' is unconnected for instance 'axi_dma_1' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'design_1_axi_dma_1_2' has 64 connections declared, but only 56 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:265]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:645]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2158]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2158]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3286]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_df_0' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_df_0' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_df_0' is unconnected for instance 'auto_us_df' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3417]
+WARNING: [Synth 8-7023] instance 'auto_us_df' of module 'design_1_auto_us_df_0' has 34 connections declared, but only 33 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3417]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3286]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1F69D31' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3453]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_df_1' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_df_1' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_df_1' is unconnected for instance 'auto_us_df' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3608]
+WARNING: [Synth 8-7023] instance 'auto_us_df' of module 'design_1_auto_us_df_1' has 40 connections declared, but only 39 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3608]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1F69D31' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3453]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_N071UN' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3650]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_df_2' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_df_2' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_us_df_2' is unconnected for instance 'auto_us_df' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3781]
+WARNING: [Synth 8-7023] instance 'auto_us_df' of module 'design_1_auto_us_df_2' has 34 connections declared, but only 33 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3781]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_N071UN' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3650]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1GN6L8E' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_df_3' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_df_3' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_us_df_3_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_us_df_3' is unconnected for instance 'auto_us_df' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3972]
+WARNING: [Synth 8-7023] instance 'auto_us_df' of module 'design_1_auto_us_df_3' has 40 connections declared, but only 39 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3972]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1GN6L8E' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_4' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_xbar_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_4' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_xbar_4_stub.v:5]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_arready' does not match port width (4) of module 'design_1_xbar_4' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1459]
+WARNING: [Synth 8-689] width (384) of port connection 's_axi_rdata' does not match port width (512) of module 'design_1_xbar_4' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1476]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_rlast' does not match port width (4) of module 'design_1_xbar_4' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1477]
+WARNING: [Synth 8-689] width (6) of port connection 's_axi_rresp' does not match port width (8) of module 'design_1_xbar_4' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1479]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_rvalid' does not match port width (4) of module 'design_1_xbar_4' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1480]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_4' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1411]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_4' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1411]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_xbar_4' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1411]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_xbar_4' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1411]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_4' has 78 connections declared, but only 74 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1411]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:645]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_1_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1488]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1FDLJBY' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2430]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1FDLJBY' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2430]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_NZRVUN' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2562]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_NZRVUN' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2562]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1GFU8IL' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2687]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1GFU8IL' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2687]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_HS4N6K' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2812]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_s00_data_fifo_8' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_s00_data_fifo_8_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_s00_data_fifo_8' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_s00_data_fifo_8_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_HS4N6K' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2812]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_3' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_xbar_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_3' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_xbar_3_stub.v:5]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_wstrb' does not match port width (12) of module 'design_1_xbar_3' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2135]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2117]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2117]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_3' has 40 connections declared, but only 38 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:2117]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_1_0' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:1488]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:527]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:527]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:527]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vector_add_0_3' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_vector_add_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vector_add_0_3' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_vector_add_0_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/.Xil/Vivado-26268-DESKTOP-EOP59MS/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:561]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:561]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 81 given [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:561]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1GFU8IL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1GFU8IL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1GFU8IL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1GFU8IL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_NZRVUN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_NZRVUN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_NZRVUN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_NZRVUN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1FDLJBY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1FDLJBY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1FDLJBY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1FDLJBY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s03_couplers_imp_1GN6L8E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s03_couplers_imp_1GN6L8E is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s02_couplers_imp_N071UN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s02_couplers_imp_N071UN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1F69D31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1F69D31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_O7FAN0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_O7FAN0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1CA5Z32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.137 ; gain = 435.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.137 ; gain = 435.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.137 ; gain = 435.910
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1900.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_xbar_4/design_1_xbar_4/design_1_xbar_4_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_xbar_4/design_1_xbar_4/design_1_xbar_4_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_0/design_1_auto_us_df_0/design_1_auto_us_df_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_us_df'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_0/design_1_auto_us_df_0/design_1_auto_us_df_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_us_df'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_1/design_1_auto_us_df_1/design_1_auto_us_df_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s01_couplers/auto_us_df'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_1/design_1_auto_us_df_1/design_1_auto_us_df_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s01_couplers/auto_us_df'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_2/design_1_auto_us_df_2/design_1_auto_us_df_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s02_couplers/auto_us_df'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_2/design_1_auto_us_df_2/design_1_auto_us_df_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s02_couplers/auto_us_df'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_3/design_1_auto_us_df_3/design_1_auto_us_df_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s03_couplers/auto_us_df'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_us_df_3/design_1_auto_us_df_3/design_1_auto_us_df_1_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s03_couplers/auto_us_df'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/xbar'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_s00_data_fifo_8/design_1_s00_data_fifo_8/design_1_s00_data_fifo_8_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_s00_data_fifo_8/design_1_s00_data_fifo_8/design_1_s00_data_fifo_8_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/s00_data_fifo'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_ds'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_1/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_3/design_1_vector_add_0_3/design_1_vector_add_0_3_in_context.xdc] for cell 'design_1_i/vector_add_0'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_vector_add_0_3/design_1_vector_add_0_3/design_1_vector_add_0_3_in_context.xdc] for cell 'design_1_i/vector_add_0'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_2/design_1_axi_dma_1_2/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_1'
+Finished Parsing XDC File [c:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.gen/sources_1/bd/design_1/ip/design_1_axi_dma_1_2/design_1_axi_dma_1_2/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_1'
+Parsing XDC File [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1909.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1909.863 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.863 ; gain = 445.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.863 ; gain = 445.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_us_df. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s01_couplers/auto_us_df. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s02_couplers/auto_us_df. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s03_couplers/auto_us_df. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vector_add_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.863 ; gain = 445.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1909.863 ; gain = 445.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module design_1_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1909.863 ; gain = 445.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2458.934 ; gain = 994.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2458.934 ; gain = 994.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2478.559 ; gain = 1014.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_xbar_4              |         1|
+|2     |design_1_auto_us_df_0        |         1|
+|3     |design_1_auto_us_df_1        |         1|
+|4     |design_1_auto_us_df_2        |         1|
+|5     |design_1_auto_us_df_3        |         1|
+|6     |design_1_xbar_3              |         1|
+|7     |design_1_auto_ds_0           |         1|
+|8     |design_1_auto_pc_0           |         1|
+|9     |design_1_s00_data_fifo_8     |         1|
+|10    |design_1_axi_dma_0_3         |         1|
+|11    |design_1_axi_dma_1_2         |         1|
+|12    |design_1_proc_sys_reset_0_0  |         1|
+|13    |design_1_vector_add_0_3      |         1|
+|14    |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_auto_ds           |     1|
+|2     |design_1_auto_pc           |     1|
+|3     |design_1_auto_us_df        |     4|
+|7     |design_1_axi_dma_0         |     1|
+|8     |design_1_axi_dma_1         |     1|
+|9     |design_1_proc_sys_reset_0  |     1|
+|10    |design_1_s00_data_fifo     |     1|
+|11    |design_1_vector_add_0      |     1|
+|12    |design_1_xbar              |     2|
+|14    |design_1_zynq_ultra_ps_e_0 |     1|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 2485.324 ; gain = 1011.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 2485.324 ; gain = 1021.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2485.324 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2533.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 69af5ac
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 2538.402 ; gain = 2070.688
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/vadd/vadd.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 13:27:38 2023...
