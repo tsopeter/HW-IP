@@ -1,0 +1,76 @@
+---
+MainSourceFile:  'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/fir/solution1/.autopilot/db/fir.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          60247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          267262
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          267701
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          268141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          529861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_1:  '
+    FileOffset:      109
+    FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\fir.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          888097
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_2:  '
+    FileOffset:      119
+    FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\fir.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          888248
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_125_3:  '
+    FileOffset:      125
+    FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\fir.cpp'
+    Replacements:    
+      - FilePath:        'C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\fir\solution1\.autopilot\db\fir.pp.0.cpp'
+        Offset:          888398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_125_3: '
+...

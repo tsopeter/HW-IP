@@ -1,0 +1,7 @@
+vector_add/vector_add.cpp:13:38: warning: Unsupported interface port data type in '#pragma HLS interface s_axilite' [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=x
+                                     ^
+vector_add/vector_add.cpp:14:33: warning: unexpected pragma parameter 'prot' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE s_axilite prot=w
+                                ^
+2 warnings generated.

@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "vector_add",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Users\/tsope\/OneDrive\/Documents\/GitHub\/HW-IP\/vector_add\/solution2\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "vector_add"
+              }]
+          }
+        },
+        {
+          "functionName": "vector_add",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "C:\/Users\/tsope\/OneDrive\/Documents\/GitHub\/HW-IP\/vector_add\/solution2\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "vector_add"
+              }]
+          }
+        }
+      ]
+    }]}

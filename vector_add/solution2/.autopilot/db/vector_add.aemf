@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1683308546665">
+  <ports id="1" name="x" type="PortType" originalName="x" coreId="1852142702" bitwidth="8">
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="w" type="PortType" originalName="w" coreId="1852142702" bitwidth="8">
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="y" type="PortType" originalName="y.V" coreId="7536740" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="30" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="33" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="34" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="35" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="37" source_obj="//@ports.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="39" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="40" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="41" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="44" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="46" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="47" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="48" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="50" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="51" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="54" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="56" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="59" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="60" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="178" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="183" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="184" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <blocks id="15" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>land.lhs.true</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="tmp" lineNumber="19" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="vector_add" bitwidth="1" opcode="nbreadreq" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="19" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>x</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="br_ln19" lineNumber="19" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreId="3165412352" contextFuncName="vector_add" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="19" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>nbreadreq</dataInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlInputObjs>land.lhs.true</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vector_add/vector_add.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="18" name="land.lhs.true" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>if.then</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="tmp_1" lineNumber="19" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="vector_add" bitwidth="1" opcode="nbreadreq" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="19" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>w</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln19" lineNumber="19" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreId="741749052" contextFuncName="vector_add" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="19" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>nbreadreq</dataInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vector_add/vector_add.cpp">
+      <validLinenumbers>19</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="23" name="if.then" type="BlockType">
+    <controlInputObjs>land.lhs.true</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="X_V" lineNumber="20" originalName="X.V" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="vector_add" bitwidth="8" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="20" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>x</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="W_V" lineNumber="21" originalName="W.V" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="no" opType="adapter" coreId="123" contextFuncName="vector_add" bitwidth="8" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="21" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>w</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="mul_ln813" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="mul_8s_8s_8_1_1_U1" coreName="Multiplier" implIndex="auto" control="no" opType="mul" coreId="3" contextFuncName="operator_assign_17_17_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="mul" m_display="0" m_delay="1.65" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="operator=&amp;lt;17, 17, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln24" lineNumber="24" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreId="3178421952" contextFuncName="vector_add" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="24" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vector_add/vector_add.cpp">
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h">
+      <validLinenumbers>813</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name="if.end" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>land.lhs.true</controlInputObjs>
+    <controlInputObjs>if.then</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="acc_V_loc_0" lineNumber="813" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." coreId="3185163328" contextFuncName="operator_assign_17_17_true_AP_TRN_AP_WRAP_0" bitwidth="8" opcode="phi" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="813" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="operator=&amp;lt;17, 17, true, AP_TRN, AP_WRAP, 0&amp;gt;"/>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>if.then</controlInputObjs>
+      <controlInputObjs>land.lhs.true</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="y_write_ln26" lineNumber="26" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="122" contextFuncName="vector_add" opcode="write" nodeLatency="1" m_display="0" m_delay="1.0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="26" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>y</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln28" lineNumber="28" fileName="vector_add/vector_add.cpp" fileDirectory=".." coreId="3187767232" contextFuncName="vector_add" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vector_add/vector_add.cpp" linenumber="28" fileDirectory="C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP" functionName="vector_add"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="vector_add/vector_add.cpp">
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h">
+      <validLinenumbers>813</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <regnodes realName="acc_V_loc_0_reg_79">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <expressionNodes realName="acc_V_loc_0_phi_fu_83">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln813_fu_95">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="tmp_nbreadreq_fu_44">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="W_V_read_fu_66">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_72">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_1_nbreadreq_fu_52">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="X_V_read_fu_60">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioPorts name="w">
+    <contents name="nbreadreq">
+      <nodeIds>16</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="x">
+    <contents name="nbreadreq">
+      <nodeIds>13</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y">
+    <contents name="write">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="25" stage="1" latency="2"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="vector_add" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>15</basicBlocks>
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>23</basicBlocks>
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

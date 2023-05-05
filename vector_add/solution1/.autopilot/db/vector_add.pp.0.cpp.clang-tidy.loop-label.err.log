@@ -1,0 +1,4 @@
+2 warnings and 26 errors generated.
+Error while processing C:\Users\tsope\OneDrive\Documents\GitHub\HW-IP\vector_add\solution1\.autopilot\db\vector_add.pp.0.cpp.
+clang-tidy applied 131 of 131 suggested fixes.
+Suppressed 2 warnings (2 with check filters).

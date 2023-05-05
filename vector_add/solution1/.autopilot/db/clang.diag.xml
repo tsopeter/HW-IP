@@ -1,0 +1,39 @@
+<dict>
+  <key>main-file</key>
+  <string>C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/solution1/.autopilot/db/vector_add.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>vector_add/vector_add.cpp</string>
+      <key>line</key>
+      <integer>13</integer>
+      <key>column</key>
+      <integer>38</integer>
+      <key>message</key>
+      <string>Unsupported interface port data type in &apos;#pragma HLS interface s_axilite&apos;</string>
+      <key>ID</key>
+      <integer>5557</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>vector_add/vector_add.cpp</string>
+      <key>line</key>
+      <integer>14</integer>
+      <key>column</key>
+      <integer>33</integer>
+      <key>message</key>
+      <string>unexpected pragma parameter &apos;prot&apos;</string>
+      <key>ID</key>
+      <integer>5554</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

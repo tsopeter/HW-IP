@@ -1,0 +1,41 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'tsope' on host 'desktop-eop59ms' (Windows NT_amd64 version 6.2) on Fri May 05 12:42:49 -0500 2023
+INFO: [HLS 200-10] In directory 'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP'
+Sourcing Tcl script 'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/solution2/export.tcl'
+INFO: [HLS 200-1510] Running: source C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/solution2/export.tcl
+INFO: [HLS 200-1510] Running: open_project vector_add 
+INFO: [HLS 200-10] Opening project 'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add'.
+INFO: [HLS 200-1510] Running: set_top vector_add 
+INFO: [HLS 200-1510] Running: add_files vector_add/vector_add.cpp 
+INFO: [HLS 200-10] Adding design file 'vector_add/vector_add.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution2 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/tsope/OneDrive/Documents/GitHub/HW-IP/vector_add/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=math
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=ku
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library math -rtl verilog -vendor ku -version 1.1.0 
+INFO: [HLS 200-1510] Running: source ./vector_add/solution2/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name vector_add vector_add 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Running Dispatch Server on port: 62609
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 393.172 ; gain = 63.102
+INFO: [Common 17-206] Exiting Vivado at Fri May  5 12:43:18 2023...
+INFO: [HLS 200-802] Generated output file vector_add/solution2/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 17.487 seconds; current allocated memory: 6.992 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 30.873 seconds; peak allocated memory: 106.273 MB.

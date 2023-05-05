@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vitis HLS Report for 'vector_add'
+================================================================
+* Date:           Fri May  5 12:42:26 2023
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        vector_add
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.077 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        1|  10.000 ns|  10.000 ns|    2|    2|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.07>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [vector_add/vector_add.cpp:9]   --->   Operation 3 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln9 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_7, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0" [vector_add/vector_add.cpp:9]   --->   Operation 4 'specinterface' 'specinterface_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %x, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %x"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %w, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %w"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %y"   --->   Operation 9 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %y, void @empty_2, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_4, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %y, void @empty_5, i32 1, i32 1, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i8P128A, i8 %x, i32 1" [vector_add/vector_add.cpp:19]   --->   Operation 12 'nbreadreq' 'tmp' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 13 [1/1] (0.42ns)   --->   "%br_ln19 = br i1 %tmp, void %if.end, void %land.lhs.true" [vector_add/vector_add.cpp:19]   --->   Operation 13 'br' 'br_ln19' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_1 = nbreadreq i1 @_ssdm_op_NbReadReq.axis.i8P128A, i8 %w, i32 1" [vector_add/vector_add.cpp:19]   --->   Operation 14 'nbreadreq' 'tmp_1' <Predicate = (tmp)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%br_ln19 = br i1 %tmp_1, void %if.end, void %if.then" [vector_add/vector_add.cpp:19]   --->   Operation 15 'br' 'br_ln19' <Predicate = (tmp)> <Delay = 0.42>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%X_V = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %x" [vector_add/vector_add.cpp:20]   --->   Operation 16 'read' 'X_V' <Predicate = (tmp & tmp_1)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%W_V = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %w" [vector_add/vector_add.cpp:21]   --->   Operation 17 'read' 'W_V' <Predicate = (tmp & tmp_1)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 18 [1/1] (1.65ns)   --->   "%mul_ln813 = mul i8 %W_V, i8 %X_V"   --->   Operation 18 'mul' 'mul_ln813' <Predicate = (tmp & tmp_1)> <Delay = 1.65> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.42ns)   --->   "%br_ln24 = br void %if.end" [vector_add/vector_add.cpp:24]   --->   Operation 19 'br' 'br_ln24' <Predicate = (tmp & tmp_1)> <Delay = 0.42>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%acc_V_loc_0 = phi i8 %mul_ln813, void %if.then, i8 0, void %land.lhs.true, i8 0, void %entry"   --->   Operation 20 'phi' 'acc_V_loc_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (1.00ns)   --->   "%write_ln26 = write void @_ssdm_op_Write.s_axilite.i8P0A, i8 %y, i8 %acc_V_loc_0" [vector_add/vector_add.cpp:26]   --->   Operation 21 'write' 'write_ln26' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+
+State 2 <SV = 1> <Delay = 1.00>
+ST_2 : Operation 22 [1/2] (1.00ns)   --->   "%write_ln26 = write void @_ssdm_op_Write.s_axilite.i8P0A, i8 %y, i8 %acc_V_loc_0" [vector_add/vector_add.cpp:26]   --->   Operation 22 'write' 'write_ln26' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln28 = ret" [vector_add/vector_add.cpp:28]   --->   Operation 23 'ret' 'ret_ln28' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.08ns
+The critical path consists of the following:
+	axis read operation ('X.V', vector_add/vector_add.cpp:20) on port 'x' (vector_add/vector_add.cpp:20) [19]  (0 ns)
+	'mul' operation ('mul_ln813') [21]  (1.65 ns)
+	multiplexor before 'phi' operation ('acc_V_loc_0') with incoming values : ('mul_ln813') [24]  (0.427 ns)
+	'phi' operation ('acc_V_loc_0') with incoming values : ('mul_ln813') [24]  (0 ns)
+	s_axi write operation ('write_ln26', vector_add/vector_add.cpp:26) on port 'y' (vector_add/vector_add.cpp:26) [25]  (1 ns)
+
+ <State 2>: 1ns
+The critical path consists of the following:
+	s_axi write operation ('write_ln26', vector_add/vector_add.cpp:26) on port 'y' (vector_add/vector_add.cpp:26) [25]  (1 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

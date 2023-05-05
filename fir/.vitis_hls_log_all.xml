@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-1715] Encountered problem during source synthesis" projectName="fir" solutionName="solution1" date="2023-05-05T12:08:08.469-0500"/>
+        <logs message="ERROR: [HLS 214-208] The ap_axis|ap_axiu|qdma_axis|hls::axis data types must only be used for AXI-Stream ports in the interface. 'y' is not an AXI-Stream and/or is not a port in the interface" projectName="fir" solutionName="solution1" date="2023-05-05T12:08:08.442-0500"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 214-255] Ignore aggregate pragma/directive on AXI-Stream (with side-channel) interface 'x' (fir/fir.cpp:89:0)" projectName="fir" solutionName="solution1" date="2023-05-05T12:08:08.420-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 214-255] Ignore aggregate pragma/directive on AXI-Stream (with side-channel) interface 'y' (fir/fir.cpp:89:0)" projectName="fir" solutionName="solution1" date="2023-05-05T12:08:08.400-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
